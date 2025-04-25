@@ -29,12 +29,9 @@ public class FrogSimulation
 	{ 
 		/* to be implemented in part (b) */ 
 		int successCount = 0;
-		int failCount = 0;
-		for (int i = 0; i < num; i++) {
+		for (int i = 0; i < num; i++) 
 			if (simulate()) successCount++;
-			else failCount++;
-		}
-		return (double) successCount / failCount;
+		return (double) successCount / num;
 
 	}
 	
